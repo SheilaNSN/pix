@@ -12,6 +12,7 @@ public class Usuario {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+<<<<<<< HEAD
     @Column(nullable = false)
     private Long nome;
 
@@ -20,4 +21,15 @@ public class Usuario {
 
     @OneToOne(optional = false)
     private ContaCorrente contaCorrente;
+=======
+    @Column
+    private String nome;
+
+    @Column
+    private String sobrenome;
+
+    @OneToOne(optional = false, cascade = { CascadeType.ALL })
+    private ContaCorrente contaCorrente;
+
+>>>>>>> feature/api-conta-corrente
 }
