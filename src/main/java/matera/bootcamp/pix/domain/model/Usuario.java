@@ -13,6 +13,7 @@ public class Usuario {
     private Long id;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     @Column(nullable = false)
     private Long nome;
 
@@ -22,6 +23,8 @@ public class Usuario {
     @OneToOne(optional = false)
     private ContaCorrente contaCorrente;
 =======
+=======
+>>>>>>> feature/api-conta-corrente
     @Column
     private String nome;
 
@@ -31,5 +34,8 @@ public class Usuario {
     @OneToOne(optional = false, cascade = { CascadeType.ALL })
     private ContaCorrente contaCorrente;
 
+<<<<<<< HEAD
+>>>>>>> feature/api-conta-corrente
+=======
 >>>>>>> feature/api-conta-corrente
 }
